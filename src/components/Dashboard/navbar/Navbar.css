@@ -52,6 +52,22 @@
   padding: 7px;
 }
 
+.sidebar__logout {
+  padding: 10px;
+  color: #e65061;
+}
+
+.sidebar__logout > a {
+  text-decoration: none;
+  color: #e65061;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.sidebar__logout > i {
+  margin-left: 10px;
+}
+
 @media only screen and (max-width: 978px) {
   .nav_icon {
     display: inline;

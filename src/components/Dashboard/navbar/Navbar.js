@@ -1,5 +1,5 @@
 import "./Navbar.css";
-import avatar from "../../assets/avatar.svg";
+import avatar from "../../../assets/avatar.svg";
 
 const Navbar = ({ sidebarOpen, openSidebar }) => {
   return (
@@ -8,8 +8,6 @@ const Navbar = ({ sidebarOpen, openSidebar }) => {
         <i className="fa fa-bars" aria-hidden="true"></i>
       </div>
       <div className="navbar__left">
-        <a href="#">Subscribers</a>
-        <a href="#">Video Management</a>
         <a className="active_link" href="#">
           Admin
         </a>
@@ -18,12 +16,16 @@ const Navbar = ({ sidebarOpen, openSidebar }) => {
         <a href="#">
           <i className="fa fa-search" aria-hidden="true"></i>
         </a>
-        <a href="#">
-          <i className="fa fa-clock-o" aria-hidden="true"></i>
-        </a>
-        <a href="#!">
+
+        <a href="#" className="">
           <img width="30" src={avatar} alt="avatar" />
+          <span className="ml-2">Amjad Ahmed</span>
         </a>
+
+        <div className="sidebar__logout">
+          <i className="fa fa-power-off mr-1"></i>
+          <a href="#">Log out</a>
+        </div>
       </div>
     </nav>
   );

@@ -1,5 +1,5 @@
 import "./Main.css";
-import hello from "../../assets/hello.svg";
+import hello from "../../../assets/hello.svg";
 import Chart from "../charts/Chart";
 
 const Main = () => {
@@ -11,7 +11,7 @@ const Main = () => {
         <div className="main__title">
           <img src={hello} alt="hello" />
           <div className="main__greeting">
-            <h1>Hello Codersbite</h1>
+            <h1>Hello Admin</h1>
             <p>Welcome to your admin dashboard</p>
           </div>
         </div>
@@ -26,7 +26,7 @@ const Main = () => {
               aria-hidden="true"
             ></i>
             <div className="card_inner">
-              <p className="text-primary-p">Number of Subscribers</p>
+              <p className="text-primary-p"> Users of Subscribers</p>
               <span className="font-bold text-title">578</span>
             </div>
           </div>
@@ -45,7 +45,7 @@ const Main = () => {
               aria-hidden="true"
             ></i>
             <div className="card_inner">
-              <p className="text-primary-p">Number of Videos</p>
+              <p className="text-primary-p">projects </p>
               <span className="font-bold text-title">340</span>
             </div>
           </div>
@@ -56,7 +56,7 @@ const Main = () => {
               aria-hidden="true"
             ></i>
             <div className="card_inner">
-              <p className="text-primary-p">Number of Likes</p>
+              <p className="text-primary-p">Clients Likes</p>
               <span className="font-bold text-title">645</span>
             </div>
           </div>
