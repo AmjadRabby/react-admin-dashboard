@@ -34,7 +34,7 @@
   display: none;
 }
 .sidebar__link {
-  background: #0000002f;
+  background: #13131317;
   padding: 10px;
   border-radius: 5px;
   margin-bottom: 5px;
@@ -50,13 +50,28 @@ span {
   margin-right: 0.4rem;
 }
 .toggle-item-link {
+  width: 30%;
   text-decoration: none !important;
   color: rgb(235, 235, 235);
   font-weight: 500;
   font-size: 16px;
+  /* padding: 10px; */
+  /* padding-right: 2rem; */
+  margin-left: 10px;
+}
+.toggle-item-link:hover {
+  color: rgb(235, 235, 235);
 }
 .toggle-item li {
-  margin-top: 10px;
+  padding: 0.2rem;
+  border-radius: 5px;
+}
+.toggle-item li:hover {
+  background: rgba(214, 65, 15, 0.404);
+}
+
+.toggle-item li {
+  margin-top: 2px;
 }
 .toggle-icon {
   color: rgb(235, 235, 235);

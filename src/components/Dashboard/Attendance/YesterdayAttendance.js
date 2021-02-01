@@ -3,7 +3,7 @@ import React from 'react';
 const YesterdayAttendance = () => {
   return (
     <div>
-      <h2 className="text-center mt-5">Yesterday </h2>
+      <h2 className="text-center mt-5">Yesterday Attendance </h2>
     </div>
   );
 };

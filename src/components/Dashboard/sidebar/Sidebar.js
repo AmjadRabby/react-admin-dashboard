@@ -4,7 +4,7 @@ import { Link, NavLink } from "react-router-dom";
 import { useRef } from "react";
 import { useState } from "react";
 import useRootClose from "react-overlays/useRootClose";
-import { FaAngleDown, FaAngleUp } from "react-icons/fa";
+import { FaAngleDown, FaAngleUp, FaHome } from "react-icons/fa";
 
 const Sidebar = ({ sidebarOpen, closeSidebar }) => {
   const ref = useRef();
@@ -96,6 +96,7 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
             activeClassName=""
           >
             <i className="fa fa-home"></i>
+            {/* <FaHome/> */}
             <span>Dashboard</span>
           </NavLink>
         </div>
@@ -113,7 +114,7 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
           </div>
           {department && (
             <div ref={ref} className="toggle-item mt-1">
-              <ul className="list-unstyled ml-5 mb-0">
+              <ul className="list-unstyled mb-0">
                 <li className="">
                   <NavLink
                     className="toggle-item-link"
@@ -151,7 +152,7 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
 
           {projects && (
             <div ref={ref} className="toggle-item mt-1">
-              <ul className="list-unstyled ml-5 mb-0">
+              <ul className="list-unstyled mb-0">
                 <li>
                   <NavLink
                     className="toggle-item-link"
@@ -232,15 +233,21 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
 
           {clients && (
             <div ref={ref} className="toggle-item mt-1">
-              <ul className="list-unstyled ml-5 mb-0">
+              <ul className="list-unstyled mb-0">
                 <li>
-                  <NavLink className="toggle-item-link" to="/addDepartment">
+                  <NavLink
+                    className="toggle-item-link"
+                    to="/clients/add-clients"
+                  >
                     <i className="fa fa-home"></i>
                     Add Clients
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink className="toggle-item-link" to="/addDepartment">
+                  <NavLink
+                    className="toggle-item-link"
+                    to="/clients/total-clients"
+                  >
                     <i className="fa fa-home"></i>
                     Total Clients
                   </NavLink>
@@ -262,27 +269,39 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
 
           {employees && (
             <div ref={ref} className="toggle-item mt-1">
-              <ul className="list-unstyled ml-5 mb-0">
+              <ul className="list-unstyled mb-0">
                 <li>
-                  <NavLink className="toggle-item-link" to="/addDepartment">
+                  <NavLink
+                    className="toggle-item-link"
+                    to="/employees/add-employees"
+                  >
                     <i className="fa fa-home"></i>
                     Add Employees
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink className="toggle-item-link" to="/addDepartment">
+                  <NavLink
+                    className="toggle-item-link"
+                    to="/employees/total-employees"
+                  >
                     <i className="fa fa-home"></i>
                     Total Employees
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink className="toggle-item-link" to="/addDepartment">
+                  <NavLink
+                    className="toggle-item-link"
+                    to="/employees/employees-history"
+                  >
                     <i className="fa fa-home"></i>
                     Employees History
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink className="toggle-item-link" to="/addDepartment">
+                  <NavLink
+                    className="toggle-item-link"
+                    to="/employees/salary-history"
+                  >
                     <i className="fa fa-home"></i>
                     Salary History
                   </NavLink>
@@ -304,33 +323,39 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
 
           {task && (
             <div ref={ref} className="toggle-item mt-1">
-              <ul className="list-unstyled ml-5 mb-0">
+              <ul className="list-unstyled mb-0">
                 <li>
-                  <NavLink className="toggle-item-link" to="/addDepartment">
+                  <NavLink className="toggle-item-link" to="/task/add-task">
                     <i className="fa fa-home"></i>
                     Add Task
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink className="toggle-item-link" to="/addDepartment">
+                  <NavLink className="toggle-item-link" to="/task/total-tasks">
                     <i className="fa fa-home"></i>
                     Total Tasks
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink className="toggle-item-link" to="/addDepartment">
+                  <NavLink className="toggle-item-link" to="/task/doing-tasks">
                     <i className="fa fa-home"></i>
                     Doing Tasks
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink className="toggle-item-link" to="/addDepartment">
+                  <NavLink
+                    className="toggle-item-link"
+                    to="/task/time-out-tasks"
+                  >
                     <i className="fa fa-home"></i>
                     Timeout Tasks
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink className="toggle-item-link" to="/addDepartment">
+                  <NavLink
+                    className="toggle-item-link"
+                    to="/task/completed-tasks"
+                  >
                     <i className="fa fa-home"></i>
                     Completed Tasks
                   </NavLink>
@@ -352,21 +377,30 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
 
           {supports && (
             <div ref={ref} className="toggle-item mt-1">
-              <ul className="list-unstyled ml-5 mb-0">
+              <ul className="list-unstyled mb-0">
                 <li>
-                  <NavLink className="toggle-item-link" to="/addDepartment">
+                  <NavLink
+                    className="toggle-item-link"
+                    to="/support/support-request"
+                  >
                     <i className="fa fa-home"></i>
                     Support Request
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink className="toggle-item-link" to="/addDepartment">
+                  <NavLink
+                    className="toggle-item-link"
+                    to="/support/support-pending"
+                  >
                     <i className="fa fa-home"></i>
                     Support Pending
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink className="toggle-item-link" to="/addDepartment">
+                  <NavLink
+                    className="toggle-item-link"
+                    to="/support/completed-support"
+                  >
                     <i className="fa fa-home"></i>
                     Completed Support
                   </NavLink>
@@ -388,57 +422,78 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
 
           {accounts && (
             <div ref={ref} className="toggle-item mt-1">
-              <ul className="list-unstyled ml-5 mb-0">
+              <ul className="list-unstyled mb-0">
                 <li>
-                  <NavLink className="toggle-item-link" to="/addDepartment">
+                  <NavLink
+                    className="toggle-item-link"
+                    to="/account/account-overview"
+                  >
                     <i className="fa fa-home"></i>
                     Accounts Overview
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink className="toggle-item-link" to="/addDepartment">
+                  <NavLink
+                    className="toggle-item-link"
+                    to="/account/add-invoices"
+                  >
                     <i className="fa fa-home"></i>
                     Add Invoices
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink className="toggle-item-link" to="/addDepartment">
+                  <NavLink
+                    className="toggle-item-link"
+                    to="/account/all-invoices"
+                  >
                     <i className="fa fa-home"></i>
                     All Invoices
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink className="toggle-item-link" to="/addDepartment">
+                  <NavLink
+                    className="toggle-item-link"
+                    to="/account/paid-invoices"
+                  >
                     <i className="fa fa-home"></i>
                     Paid Invoices
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink className="toggle-item-link" to="/addDepartment">
+                  <NavLink
+                    className="toggle-item-link"
+                    to="/account/unpaid-invoices"
+                  >
                     <i className="fa fa-home"></i>
                     Unpaid Inovices
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink className="toggle-item-link" to="/addDepartment">
+                  <NavLink
+                    className="toggle-item-link"
+                    to="/account/payment-history"
+                  >
                     <i className="fa fa-home"></i>
                     Payment History
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink className="toggle-item-link" to="/addDepartment">
+                  <NavLink className="toggle-item-link" to="/account/income">
                     <i className="fa fa-home"></i>
                     Income
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink className="toggle-item-link" to="/addDepartment">
+                  <NavLink className="toggle-item-link" to="/account/expenses">
                     <i className="fa fa-home"></i>
                     Expenses
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink className="toggle-item-link" to="/addDepartment">
+                  <NavLink
+                    className="toggle-item-link"
+                    to="/account/make-salary"
+                  >
                     <i className="fa fa-home"></i>
                     Make Salary
                   </NavLink>
@@ -459,21 +514,30 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
           </div>
           {noticeBoard && (
             <div ref={ref} className="toggle-item mt-1">
-              <ul className="list-unstyled ml-5 mb-0">
+              <ul className="list-unstyled mb-0">
                 <li>
-                  <NavLink className="toggle-item-link" to="/addDepartment">
+                  <NavLink
+                    className="toggle-item-link"
+                    to="/notice-board/add-notice"
+                  >
                     <i className="fa fa-home"></i>
                     Add Notice
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink className="toggle-item-link" to="/addDepartment">
+                  <NavLink
+                    className="toggle-item-link"
+                    to="/notice-board/all-invoices"
+                  >
                     <i className="fa fa-home"></i>
                     Today Notice
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink className="toggle-item-link" to="/addDepartment">
+                  <NavLink
+                    className="toggle-item-link"
+                    to="/notice-board/all-notice"
+                  >
                     <i className="fa fa-home"></i>
                     All Notice
                   </NavLink>
@@ -495,21 +559,30 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
 
           {attendance && (
             <div ref={ref} className="toggle-item mt-1">
-              <ul className="list-unstyled ml-5 mb-0">
+              <ul className="list-unstyled mb-0">
                 <li>
-                  <NavLink className="toggle-item-link" to="/addDepartment">
+                  <NavLink
+                    className="toggle-item-link"
+                    to="/attendance/today-attendance"
+                  >
                     <i className="fa fa-home"></i>
                     Today Attendance
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink className="toggle-item-link" to="/addDepartment">
+                  <NavLink
+                    className="toggle-item-link"
+                    to="/attendance/yesterday-attendance"
+                  >
                     <i className="fa fa-home"></i>
                     Yesterday Attendance
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink className="toggle-item-link" to="/addDepartment">
+                  <NavLink
+                    className="toggle-item-link"
+                    to="/attendance/total-attendance"
+                  >
                     <i className="fa fa-home"></i>
                     Total Attendance
                   </NavLink>
@@ -539,39 +612,57 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
 
           {appointment && (
             <div ref={ref} className="toggle-item mt-1">
-              <ul className="list-unstyled ml-5 mb-0">
+              <ul className="list-unstyled mb-0">
                 <li>
-                  <NavLink className="toggle-item-link" to="/addDepartment">
+                  <NavLink
+                    className="toggle-item-link"
+                    to="/appointment/add-leads"
+                  >
                     <i className="fa fa-home"></i>
                     Add Leads
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink className="toggle-item-link" to="/addDepartment">
+                  <NavLink
+                    className="toggle-item-link"
+                    to="/appointment/all-leads"
+                  >
                     <i className="fa fa-home"></i>
                     All Leads
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink className="toggle-item-link" to="/addDepartment">
+                  <NavLink
+                    className="toggle-item-link"
+                    to="/appointment/appointment-report"
+                  >
                     <i className="fa fa-home"></i>
                     Add Appointment
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink className="toggle-item-link" to="/addDepartment">
+                  <NavLink
+                    className="toggle-item-link"
+                    to="/appointment/today-appointment"
+                  >
                     <i className="fa fa-home"></i>
                     Today Appointment
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink className="toggle-item-link" to="/addDepartment">
+                  <NavLink
+                    className="toggle-item-link"
+                    to="/appointment/total-tasks"
+                  >
                     <i className="fa fa-home"></i>
                     Next Appointment
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink className="toggle-item-link" to="/addDepartment">
+                  <NavLink
+                    className="toggle-item-link"
+                    to="/appointment/appointment-report"
+                  >
                     <i className="fa fa-home"></i>
                     Appointment Report
                   </NavLink>
@@ -593,9 +684,12 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
 
           {settings && (
             <div ref={ref} className="toggle-item mt-1">
-              <ul className="list-unstyled ml-5 mb-0">
+              <ul className="list-unstyled mb-0">
                 <li>
-                  <NavLink className="toggle-item-link" to="/addDepartment">
+                  <NavLink
+                    className="toggle-item-link"
+                    to="/settings/font-end-section"
+                  >
                     <i className="fa fa-home"></i>
                     Fontend Section
                   </NavLink>
