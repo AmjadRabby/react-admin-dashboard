@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
 const TimeOutProjects = () => {
   return (
-    <div>
-      <h2 className="text-center mt-5">Timeout Projects</h2>
+    <div className="route-componetnt">
+      <h2 className="text-center mt-5">Timeout Projects Coming Soon!!! </h2>
     </div>
   );
 };

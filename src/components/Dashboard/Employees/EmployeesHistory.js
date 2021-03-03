@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 
 const EmployeesHistory = () => {
-    return (
-      <div>
-        <h2 className="text-center mt-5">Employees History</h2>
-      </div>
-    );
+  return (
+    <div className="route-componetnt">
+      <h2 className="text-center mt-5">Employees History Coming Soon!!! </h2>
+    </div>
+  );
 };
 
 export default EmployeesHistory;

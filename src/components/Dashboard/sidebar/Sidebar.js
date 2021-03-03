@@ -9,7 +9,18 @@ import { FaAngleDown, FaAngleUp, FaHome } from "react-icons/fa";
 const Sidebar = ({ sidebarOpen, closeSidebar }) => {
   const ref = useRef();
 
+  const [toggle, setToggle] = useState(false);
+
+
+  const handleToggleChange = (item) => {
+//  const handleDepartmentClose = () => setDepartment(false);
+//  useRootClose(ref, handleDepartmentClose, {
+//    disabled: !department,
+//  });
+   }
+
   const [department, setDepartment] = useState(false);
+
   const handleDepartmentClose = () => setDepartment(false);
   useRootClose(ref, handleDepartmentClose, {
     disabled: !department,
@@ -140,7 +151,7 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
 
         <div className="sidebar__link" onClick={() => setProjects(true)}>
           <div className="d-flex">
-            <i className="fa fa-user-secret " aria-hidden="true"></i>
+            <i className="fa fa-files-o" aria-hidden="true"></i>
             <span className=""> Projects</span>
 
             {projects ? (

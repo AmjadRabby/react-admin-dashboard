@@ -1,8 +1,9 @@
 #sidebar {
+  height: auto;
   background: linear-gradient(
     350deg,
-    rgb(214, 65, 15),
-    rgba(255, 70, 3, 0.514)
+    rgba(214, 65, 15, 0.897),
+    rgba(255, 70, 3, 0.322)
   );
   grid-area: sidebar;
   overflow-y: auto;
@@ -34,20 +35,21 @@
   display: none;
 }
 .sidebar__link {
-  background: #13131317;
+  background: #13131321;
   padding: 10px;
   border-radius: 5px;
   margin-bottom: 5px;
+  cursor: pointer;
 }
 .sidebar__link i,
 span {
   color: rgb(235, 235, 235);
   font-weight: 600;
-  font-size: 17px;
+  font-size: 16px;
 }
 .sidebar__link i {
-  font-size: 21px;
-  margin-right: 0.4rem;
+  font-size: 20px;
+  margin-right: 0.3rem;
 }
 .toggle-item-link {
   width: 30%;
@@ -55,8 +57,7 @@ span {
   color: rgb(235, 235, 235);
   font-weight: 500;
   font-size: 16px;
-  /* padding: 10px; */
-  /* padding-right: 2rem; */
+  padding-right: 1.5rem;
   margin-left: 10px;
 }
 .toggle-item-link:hover {
@@ -67,11 +68,11 @@ span {
   border-radius: 5px;
 }
 .toggle-item li:hover {
-  background: rgba(214, 65, 15, 0.404);
+  background: rgba(214, 65, 15, 0.541);
 }
 
 .toggle-item li {
-  margin-top: 2px;
+  margin-top: 5px;
 }
 .toggle-icon {
   color: rgb(235, 235, 235);

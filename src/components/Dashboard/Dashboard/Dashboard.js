@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./Dashboard.css";
-import Main from "../main/Main";
+// import Main from "../main/Main";
 import Navbar from "../navbar/Navbar";
 import Sidebar from "../sidebar/Sidebar";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
@@ -61,6 +61,7 @@ import AppointmentReport from "../Appointment/AppointmentReport";
 import NextAppointment from "../Appointment/NextAppointment";
 import TodayAppointment from "../Appointment/TodayAppointment";
 import FontendSection from "../Settings/FontendSection";
+import AdminPanel from "../AdminPanel/AdminPanel";
 
 const Dashboard = () => {
   const [sidebarOpen, setsidebarOpen] = useState(false);
@@ -75,17 +76,19 @@ const Dashboard = () => {
       <Router>
         <Navbar sidebarOpen={sidebarOpen} openSidebar={openSidebar} />
         <Sidebar sidebarOpen={sidebarOpen} closeSidebar={closeSidebar} />
+
         <Switch>
-          <Route exact path="/">
-            <Main />{" "}
-          </Route>
           <Route exact path="/dashboard">
-            <Main />{" "}
-          </Route>        
+            {" "}
+            <AdminPanel />{" "}
+          </Route>
+          <Route exact path="/">
+            {" "}
+            <AdminPanel />{" "}
+          </Route>
           <Route path="/notes">
             <Notes />
           </Route>
-        
 
           {/* Projects Route        */}
           <Route exact path="/projects/addProjects">

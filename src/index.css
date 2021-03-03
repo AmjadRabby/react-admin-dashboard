@@ -63,7 +63,7 @@ body {
 .containers {
   display: grid;
   height: 100vh;
-  grid-template-columns: 0.8fr 1fr 1fr 1fr;
+  grid-template-columns: 0.8fr 3fr;
   grid-template-rows: 0.2fr 3fr;
   grid-template-areas:
     "sidebar nav nav nav"
@@ -73,7 +73,7 @@ body {
 @media only screen and (max-width: 978px) {
   .containers {
     grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 3fr;
+    grid-template-rows: 0.2fr fr;
     grid-template-areas:
       "nav"
       "main";

@@ -1,0 +1,39 @@
+.file-code {
+  font-size: 45px;
+}
+
+.item-radius table,
+tr,
+th,
+td {
+  border: 1px solid black;
+}
+.item-radius tr,
+th,
+td {
+  /* width: 10px; */
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.tody-remainder {
+  padding: 10px 10px 10px 0;
+}
+.tody-remainder span {
+  color: #fff;
+  background: red;
+  padding: 10px;
+  font-size: 22px;
+  border-radius: 0 25px 25px 0;
+}
+.history {
+  border: 1px solid black;
+  padding: 5px 20px;
+  border-radius: 20px;
+}
+.circle-icon {
+  font-size: 28px;
+}
+.item-radius {
+  border-radius: 25px;
+}

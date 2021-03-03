@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
 const UnpaidInvoices = () => {
   return (
-    <div>
-      <h2 className="text-center mt-5">Unpaid Inovices</h2>
+    <div className="route-componetnt">
+      <h2 className="text-center mt-5">Unpaid Inovices Coming Soon!!! </h2>
     </div>
   );
 };
